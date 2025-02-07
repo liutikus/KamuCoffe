@@ -32,29 +32,11 @@
     font-weight:900;
 }
 
-.nav-container button {
-    background-color: #ffffff;
-    border-style: none;
-    color: black;
-    font-size: 1em;
-    margin-block: 10px;
-    padding-inline: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease 0s;
-    transition: color 0.3s ease 0s;
-
-    
-}
-.nav-container button:hover {
-    background-color: #0d0e0f;
-    color: #f8f9fa;
-}
 
 @media only screen and (max-width:900px){
 
-.nav-container {
-    font-size: 0.7em;
+.nav-container li, .logo {
+    font-size: 0.9em;
 }
 
 .nav-container ul {
@@ -65,7 +47,7 @@
     margin-top: 12px;
     height: min-content;
 }
-.nav-container button {
+.btn-nav {
     display: none;
 }
 

@@ -1,0 +1,43 @@
+.info-container{
+    position: absolute;
+    top: 45%;
+   color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+
+.info-container p {
+    display: block;
+}
+
+.main-text{
+    font-size: 2em;
+    font-weight: bold;
+    padding-block-end: 1em;
+}
+
+.btn-container{
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: space-evenly;
+    margin-inline: 30%;
+}
+
+@media only screen and (max-width:700px){
+.info-container{
+    top: 30%;
+}
+
+.btn-container{
+    margin-inline:0 ;
+}
+.info-container p {
+    margin-inline: 50px;
+}
+
+}
+
+
+
+
+

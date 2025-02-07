@@ -1,6 +1,7 @@
 import React from 'react'
 import './Nav.css'
-import * as motion from "motion/react-client"
+import Button from '../Components/Button'
+
 
 const Nav = () => {
   return (
@@ -11,10 +12,17 @@ const Nav = () => {
             <li>About Us</li>
             <li>Our Menu</li>
             <li>Contact Us</li>
-            <motion.button
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-            >Reserve</motion.button>
+            <div className='btn-nav' >
+
+            <Button
+            text={'Reserve'}
+            background={'white'}
+            color={'black'}
+            hoverBackground={'none'}
+            hoverColor={'white'}
+            borderColor={'white'}
+            />
+            </div>
         </ul>
       </div>
     </div>

@@ -1,0 +1,122 @@
+.main-menu-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+
+
+}
+
+.menu-info-switch-container{
+    width: 50%;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: space-around;
+    border-style: solid;
+    border-color: #32483e;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 1.5em;
+    width: 80%;
+}
+
+.menu-tab{
+padding-inline: 1em;
+}
+
+.menu-tab button{
+    color: #32483e;
+    font-weight: bold;
+    border: none;
+    background: none;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #fafafa;
+    padding-inline: 1em;
+    padding-block: 0.5em;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fafafa;
+}
+
+
+
+.menu-info-container{
+margin-top: 20px;
+font-size: 1em;
+
+}
+
+.menu-info-container  p{
+    color: #32483e;
+}
+
+.menu-quote{
+    font-size: 2em;
+    font-weight: bold;
+}
+.menu-text{
+    margin-top: 10px;
+}
+.menu-text span{
+    color: #32483e;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.image-menu-container{
+    text-align: center;
+    margin-top: 40px;
+    width: 500px; 
+    height: 500px; 
+    overflow: hidden; 
+}
+
+.image-menu-container img{
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width:1250px){
+  .main-menu-container{
+    margin-inline: 2em
+  }
+
+  .image-menu-container, .image-menu-container img{
+    width: 400px;
+    height: 400px;
+  }
+ 
+  .menu-container{
+    padding: 1em;
+  }
+
+.main-menu-container{
+    font-size: 0.8em;
+}
+
+}
+
+@media only screen and (max-width:900px){
+  .image-menu-container, .image-menu-container img{
+    width: 200px;
+    height: 500px;
+    margin-top: 100px;
+    margin-inline-start: 20px;
+  }
+
+  .menu-container{
+   position: absolute;
+   
+  }
+
+  .menu-info-container{
+    margin-top: 100px;
+    font-size: 0.8em;
+  }
+
+}

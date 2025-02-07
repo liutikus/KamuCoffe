@@ -6,24 +6,31 @@
     color: #ffffff;
 }
 
+body{
+    background-color: #fafafa;
+}
+
 .background-img{
-    background-image: url('/louis-hansel-Zg7_HNM9H7I-unsplash.jpg');
+    background-image: url('/louis-hansel-u13IpYtZ9I8-unsplash.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 1000px;
+    height: 800px;
     background-attachment: fixed;
+    /* position: fixed; */
+
     z-index: -1;
+
 }
 
 .background-black{
     width: 100%;
-    height: 1000px;
+    height: 800px;
     background-color: black;
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.7;
+    opacity: 0.6;
     z-index: 0;
 
 }
