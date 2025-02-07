@@ -3,18 +3,20 @@ import './Nav.css'
 import Button from '../Components/Button'
 
 
-const Nav = () => {
+const Nav = ({innerRef, handleReserveScroll}) => {
   return (
-    <div>
+    <div ref={innerRef}>
       <div className="nav-container">
         <ul>
             <p className='logo'>Kamu & <br/><span>Coffee</span></p>
             <li>About Us</li>
             <li>Our Menu</li>
             <li>Contact Us</li>
-            <div className='btn-nav' >
+            <div 
+            className='btn-nav' >
 
             <Button
+            handleClick={handleReserveScroll}
             text={'Reserve'}
             background={'white'}
             color={'black'}

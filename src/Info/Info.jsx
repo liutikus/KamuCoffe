@@ -4,7 +4,7 @@ import * as motion from "motion/react-client"
 import Button from '../Components/Button'
 
 
-const Info = () => {
+const Info = ({handleReserveScroll,handelMenuScroll}) => {
   return (
     <div>
       <div
@@ -35,6 +35,7 @@ const Info = () => {
          transition: {delay:2.5, duration: 0.5}}}
         className="btn-container">
       <Button
+      handleClick={handleReserveScroll}
        text={'Reserve'}
        background={'white'}
        color={'black'}
@@ -44,7 +45,9 @@ const Info = () => {
 
        />
       <Button
-          text={'Order'}
+      handleClick={handelMenuScroll}
+
+          text={'Menu'}
           background={'none'}
           color={'white'}
           hoverBackground={'white'}

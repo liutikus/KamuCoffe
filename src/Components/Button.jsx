@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import * as motion from "motion/react-client"
 
-const Button = ({text, background, color, hoverBackground, hoverColor, borderColor}) => {
+const Button = ({text, background, color, hoverBackground, hoverColor, borderColor, handleClick}) => {
 
 
 
@@ -9,6 +9,7 @@ const Button = ({text, background, color, hoverBackground, hoverColor, borderCol
   return (
     <div style={{display:'inline'}}>
       <motion.button 
+      onClick={handleClick}
        whileHover={{ background: hoverBackground, color: hoverColor }}
        whileTap={{ scale: 0.9 }}
       style={{

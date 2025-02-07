@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Menu.css";
 import * as motion from "motion/react-client";
 
-const Menu = ({ menu }) => {
+const Menu = ({ menu, innerRef }) => {
 
 
   const [menuTabs, setMenuTabs] = useState([
@@ -41,7 +41,7 @@ const Menu = ({ menu }) => {
   };
 
   return (
-    <div className="main-menu-container">
+    <div ref={innerRef} className="main-menu-container">
       <div className="menu-info-switch-container">
         <motion.div
          initial={{ opacity: 0, y:50}}

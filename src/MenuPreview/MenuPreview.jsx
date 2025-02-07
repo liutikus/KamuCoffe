@@ -7,7 +7,7 @@ import secondImage from '/MenuImages/secondmenuimage.webp'
 import thirdImage from '/MenuImages/thirdmenuimage.jpeg'
 
 
-const MenuPreview = () => {
+const MenuPreview = ({handleReserveScroll,handleMenuScroll}) => {
 
   const [imagesMenu, setImageMenu] = useState([{
     img: firstImage,
@@ -79,7 +79,9 @@ const MenuPreview = () => {
                 whileHover={{filter:'blur(2px)'}}
                 className="btn-menu-preview-container">
                 <Button
-                    text={`View ${title} Menu>`}
+                    handleClick={handleMenuScroll}
+
+                    text={`View Menu>`}
                     background={'#fafafa'}
                     color={'#32483e'}
                     hoverBackground={'#32483e'}
@@ -102,6 +104,7 @@ const MenuPreview = () => {
       <div className="btn-preview-menu">
 
                     <Button
+                    handleClick={handleMenuScroll}
                     text={'View Menu'}
                     background={'#fafafa'}
                     color={'#32483e'}
@@ -112,6 +115,7 @@ const MenuPreview = () => {
 
                     
                     <Button
+                    handleClick={handleReserveScroll}
                     text={'Order >'}
                     background={'#fafafa'}
                     color={'#32483e'}
