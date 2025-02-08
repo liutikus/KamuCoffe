@@ -3,15 +3,15 @@ import './Nav.css'
 import Button from '../Components/Button'
 
 
-const Nav = ({innerRef, handleReserveScroll}) => {
+const Nav = ({innerRef, handleReserveScroll,handleHomeScroll, handleMenuScroll}) => {
   return (
     <div ref={innerRef}>
       <div className="nav-container">
         <ul>
             <p className='logo'>Kamu & <br/><span>Coffee</span></p>
-            <li>About Us</li>
-            <li>Our Menu</li>
-            <li>Contact Us</li>
+            <li onClick={handleHomeScroll}>About Us</li>
+            <li onClick={handleMenuScroll}>Our Menu</li>
+            <li onClick={handleReserveScroll}>Contact Us</li>
             <div 
             className='btn-nav' >
 

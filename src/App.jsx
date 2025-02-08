@@ -24,7 +24,10 @@ function App() {
       <div>
       <BackgroundImg/>
       <Nav innerRef={homeRef} 
-      handleReserveScroll={()=> handleClickScroll(contactRef)}/>
+      handleReserveScroll={()=> handleClickScroll(contactRef)}
+      handleMenuScroll={()=> handleClickScroll(menuRef)}
+      handleHomeScroll={()=>handleClickScroll(homeRef)}
+      />
       <Info
       handleReserveScroll={()=> handleClickScroll(contactRef)}
       handelMenuScroll={()=> handleClickScroll(menuRef)}

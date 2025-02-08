@@ -103,15 +103,19 @@ font-size: 1em;
 
 @media only screen and (max-width:900px){
   .image-menu-container, .image-menu-container img{
-    width: 200px;
+    width: 400px;
     height: 500px;
-    margin-top: 100px;
+    margin-top: 10px;
     margin-inline-start: 20px;
   }
-
+.main-menu-container{display: block;}
   .menu-container{
    position: absolute;
    
+  }
+
+  .menu-info-switch-container{
+    width: 80%;
   }
 
   .menu-info-container{
